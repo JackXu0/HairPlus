@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/arrow_back_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DETAIL"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#22000000"></RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </android.support.v4.view.ViewPager>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/designer_work1"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <wingsoloar.com.hairplus.Views.CircleImageView
+                    android:id="@+id/user_avator"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_avator"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/avator8" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="麦若寇"
+                    android:textColor="#cc000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_alignTop="@+id/like_button"
+                    android:layout_toRightOf="@+id/user_avator"
+                    android:layout_toEndOf="@+id/user_avator"
+                    android:layout_marginStart="10dp" />
+
+                <Button
+                    android:id="@+id/find_button"
+                    android:layout_width="60dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+
+                    android:text="find"
+                    android:textColor="#62BBBA"
+                    android:background="@drawable/find_button"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+
+                <ImageView
+                    android:id="@+id/like_button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toLeftOf="@id/find_button"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/like_icon" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#22000000"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="👩🏻女生韩范发型 I 锁骨发 I 烫发参考 I 秋冬流行发型\r\n一款大C卷外翻的中发气垫烫发型，厌倦黑长直 不如做一个自然气垫烫，大卷蓬松自然，富有层次感，看似杂乱实则有序，整个人看起来特别大气有气质，带点妩媚性感的味道。刘海看似随意，根据脸型精心设计的侧颜八字刘海，让圆脸看起来更小更精致\r\n\r\n后续护理🕺🏻\r\n这款大卷外翻的发型，蓬松慵懒，所以打理起来也很方便，不用特意定型，洗完头直接吹干就好，怕头发毛躁的话抹些精油护理一下，从下往上托着大卷抓几下更好看哦！"
+                    android:textColor="#dd000000"
+                    android:textIsSelectable="true"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

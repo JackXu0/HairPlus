@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:text="取消"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/publish"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="发表"
+            android:textColor="#45BD28"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_below="@id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@null"
+        android:textColor="#000000"
+        android:hint="这一刻的想法...">
+
+    </EditText>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_below="@id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:numColumns="3" />
+
+    <RelativeLayout
+        android:layout_below="@id/gridview"
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="#22000000"></RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/divider1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:max="255"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:progress="255"
+        android:theme="@style/RatingBar_CustomColor"
+        android:stepSize="0.5" />
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/rating"
+        android:id="@+id/tagView"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_below="@id/tagView"
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="#22000000"></RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/barber"
+        android:layout_below="@id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/tony_avator"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="选择发型师"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/arrow_right"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

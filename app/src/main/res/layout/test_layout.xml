@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#000000"/>
+
+    <EditText
+        android:id="@+id/et_context"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="@android:color/transparent"
+        android:hint="| 输入要发布的内容"
+        android:padding="5dp"
+        android:textColorHint="@android:color/black"
+        android:gravity="top"
+        android:textColor="@android:color/black"
+        />
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#44000000"
+        android:layout_marginTop="25px"
+        ></View>
+    <TextView
+        android:id="@+id/find_comment_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:text="确定"
+        />
+
+
+</LinearLayout>

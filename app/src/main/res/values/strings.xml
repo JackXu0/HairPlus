@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WheresTony</string>
+    <string name="title_index">发型师</string>
+    <string name="title_dashboard">发现</string>
+    <string name="title_my">我的</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
